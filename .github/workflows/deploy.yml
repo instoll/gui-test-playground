@@ -12,6 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: Install yarn
+      run: sudo npm install -g yarn
+
     - name: Install
       run: make install
 

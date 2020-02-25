@@ -3,8 +3,6 @@
 BIN := ./node_modules/.bin
 
 install:
-	@echo "Installing Yarn.."
-	npm install -g yarn
 	@echo "Installing NodeJS dependencies.."
 	yarn
 	@echo "Installing Python dependencies.."
