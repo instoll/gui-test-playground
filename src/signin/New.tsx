@@ -41,7 +41,7 @@ const Component = () => {
       </h3>
 
       <TextField
-        id="outlined-basic"
+        id="js-username-input"
         label="Username"
         variant="outlined"
         value={username}
@@ -49,7 +49,7 @@ const Component = () => {
       />
 
       <TextField
-        id="outlined-basic"
+        id="js-password-input"
         label="Password"
         type="password"
         variant="outlined"
@@ -59,7 +59,7 @@ const Component = () => {
 
       <hr />
 
-      <Button variant="contained" color="primary" onClick={() => submit()}>
+      <Button id="js-submit-button" variant="contained" color="primary" onClick={() => submit()}>
         Sign In
       </Button>
     </Container>
