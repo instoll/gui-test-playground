@@ -4,17 +4,17 @@ BIN := ./node_modules/.bin
 
 install:
 	@echo "Installing NodeJS dependencies.."
-	yarn
+	npm install
 	@echo "Installing Python dependencies.."
 	pip install -r requirements.txt
 
 run:
 	@echo "Running.."
-	yarn start
+	npm run start
 
 build:
 	@echo "Building.."
-	yarn build
+	npm run build
 
 deploy: build
 	@echo "Publishing to S3.."
